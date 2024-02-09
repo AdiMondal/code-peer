@@ -1,0 +1,19 @@
+.homePageWrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.formWrapper{
+    background: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 90%;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+}

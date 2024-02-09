@@ -1,6 +1,8 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import EditorPage from './pages/EditorPage';
+import './App.css';
+
 
 function App() {
    return (
@@ -16,4 +18,5 @@ function App() {
 }
 
 export default App;
+
 
