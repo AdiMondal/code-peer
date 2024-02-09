@@ -5,17 +5,17 @@ const Home = () => {
   return (
     <div className='homePageWrapper'>
         <div className='formWrapper'>
-          <img src = "/code-peer.png" alt='code-peer-logo' />
+          <img className="homePageLogo" src = "/code-peer.png" alt='code-peer-logo' />
           <h4 className='mainLabel'>Paste invitation room ID</h4>
           <div className='inputGroup'>
              <input 
                type='text'
-               className='inputbox'
+               className='inputBox'
                placeholder='ROOM ID'
              />
               <input 
                type='text'
-               className='inputbox'
+               className='inputBox'
                placeholder='USER NAME'
              />
              <button className='btn joinBtn'>Join</button>

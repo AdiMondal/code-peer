@@ -6,14 +6,73 @@
     color: white;
 }
 .formWrapper{
-    background: #282a36;
+    background: #386641;
     padding: 20px;
     border-radius: 10px;
     width: 500px;
     max-width: 90%;
 }
-.footer{
+footer{
     position: fixed;
     bottom: 0;
-    height: 10vh;
+}
+footer a {
+  color: #4aee88;
+}
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+}
+.mainLabel{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.homePageLogo{ 
+    height: 20%;
+    width: 20%;
+    margin-bottom: 30px;
+}
+.inputBox{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 24px;
+    background-color: #eee;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.joinBtn{
+    background: #4aee88;
+    width: 100px;
+    margin-left: auto;
+}
+.joinBtn:hover{
+    background: #2b824c;
+}
+.createInfo{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.createNewBtn{
+    color: #4aee88;
+    text-decoration: none;
+    border-bottom: 1px solid #4aee88;
+    transition: all 0.3s ease-in-out;
+}
+.createNewBtn:hover,
+footer a:hover
+{
+ color: #368654;
+ border-color: #368654;
 }
