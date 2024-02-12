@@ -1,7 +1,16 @@
-import React from 'react'
-
+import React, {useState} from 'react'
+import { v4 as uuidv4} from 'uuid';
 
 const Home = () => {
+
+  const [roomID , setRoomID] = useState(''); 
+  const [username , setUserName] = useState('');
+  const createNewRoom = (e) => {
+     e.preventDefault();
+     const id = uuidv4();
+     setRoomID(id);
+  }
+
   return (
     <div className='homePageWrapper'>
         <div className='formWrapper'>
@@ -12,16 +21,20 @@ const Home = () => {
                type='text'
                className='inputBox'
                placeholder='ROOM ID'
+               onChange={(e)=> setRoomID(e.target.value)}
+               value={roomID}
              />
               <input 
                type='text'
                className='inputBox'
                placeholder='USER NAME'
+               onChange={(e)=> setUserName(e.target.value)}
+               value={username}
              />
              <button className='btn joinBtn'>Join</button>
              <span className='createInfo'>
                 If you don't have an invite then &nbsp;
-                <a href="" className='createNewBtn'>
+                <a  onClick={createNewRoom} href="" className='createNewBtn'>
                   new room
                 </a>
              </span>
@@ -37,4 +50,5 @@ const Home = () => {
 }
 
 export default Home;
+
 
